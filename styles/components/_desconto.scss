@@ -1,0 +1,55 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#desconto{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+    .desconto-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            font-family: variaveis.$ft-titulos;
+            font-size: 2rem;
+            color: variaveis.$cor-primaria;
+        }
+        p{
+            font-family: variaveis.$ft-textos;
+            font-size: 1.3rem;
+            color: variaveis.$cor-primaria;
+        }
+        .input-btn{
+            $largura-input: 790px;
+            width: $largura-input;
+            height: 65px;
+            border: 1px solid variaveis.$cor-secundaria;
+            border-radius: 65px;
+            margin: 0 auto;
+            display: inline-flex;
+            input{
+                font-family: variaveis.$ft-textos;
+                font-size: 1.2rem;
+                color: variaveis.$cor-primaria;
+                width: calc($largura-input * 0.65);
+                border: none;
+                outline: none;
+                margin-left: 3rem;
+            }
+            button{
+                font-family: variaveis.$ft-textos;
+                font-size: 1.2rem;
+                color: variaveis.$cor-primaria;
+                width: calc($largura-input * 0.56);
+                border: none;
+                outline: none;
+                background-color: variaveis.$cor-secundaria;
+                border-radius: 0 65px 65px 0;
+                color: white;
+            }
+        }
+    }
+}

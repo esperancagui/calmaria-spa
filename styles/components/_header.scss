@@ -30,6 +30,9 @@ header{
                 font-weight: 500;
                 
             }
+            a:hover{
+                font-weight: 700;
+            }
 
         }
     }
@@ -58,10 +61,14 @@ header{
                 font-weight: 600;
                 color: #FFFFFF;
                 border-radius: 30px;
-                background-color: variaveis.$cor-secundaria;
+                background-color: variaveis.$cor-default;
                 border: none;
                 padding: 1rem;
                 width: 70%;
+                transition: .2s;
+           }
+           .btn-main:hover{
+            background-color: variaveis.$cor-secundaria;
            }
         }
 
