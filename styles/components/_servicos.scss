@@ -1,0 +1,6 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis';
+
+#servicos{
+    background: variaveis.$gradiente-primario;
+}
